@@ -1,14 +1,36 @@
 HH_Test1
 
-Code Methods
-public void SaveThis()
+
+
+
+
+Screenshots:
+
+Video:
+##
+Code methods:
+
+    public void DeleteThis()
+    {
+        //delete all meesages even the saved ones + clear Textfield
+        //message keys are deleted
+        PlayerPrefs.DeleteAll();
+        inputText.text = "";
+        print("Keys deleted");
+    }
+
+    public void ClearThis()
+    {
+        //clears Inputfield 
+        inputText.text = "";
+    }
+    public void SaveThis()
     {
         //save methode and Console message key1 saved
         tutorialText = inputText.text;
         print("Key1 saved");
         PlayerPrefs.SetString("TutorialText", tutorialText);
     }
-
     public void LoadThis()
     {
         //Load last text
@@ -36,24 +58,3 @@ public void SaveThis()
         }
 
     }
-    
-    public void DeleteThis()
-    {
-        //delete all meesages even the saved ones + clear Textfield
-        //message keys are deleted
-        PlayerPrefs.DeleteAll();
-        inputText.text = "";
-        print("Keys deleted");
-    }
-
-    public void ClearThis()
-    {
-        //clears Inputfield 
-        inputText.text = "";
-    }
-
-
-Screenshots
-
-Video:
-##
